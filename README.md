@@ -1,6 +1,6 @@
-[![role](https://img.shields.io/ansible/role/54952)](https://galaxy.ansible.com/trallnag/tmux)
-[![quality](https://img.shields.io/ansible/quality/54952)](https://galaxy.ansible.com/trallnag/tmux)
-[![downloads](https://img.shields.io/ansible/role/d/54952?label=downloads)](https://galaxy.ansible.com/trallnag/tmux)
+[![role](https://img.shields.io/ansible/role/55379)](https://galaxy.ansible.com/trallnag/tmux)
+[![quality](https://img.shields.io/ansible/quality/55379)](https://galaxy.ansible.com/trallnag/tmux)
+[![downloads](https://img.shields.io/ansible/role/d/55379?label=downloads)](https://galaxy.ansible.com/trallnag/tmux)
 
 # Endlessh
 
