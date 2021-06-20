@@ -1,0 +1,27 @@
+- name: Install tmux and other packages required
+  apt:
+    name: "{{ tmux_packages }}"
+    state: present
+  become: true
+
+- name: Create configuration directory
+  file:
+    dest: .tmux
+    state: directory
+
+- name: Render and place tmux configuration file
+  template:
+    src: "{{ tmux_conf_template }}"
+    dest: ~/.tmux.conf
+
+- name: Create plugin directory
+  file:
+    dest: ~/.tmux/plugins
+    state: directory
+
+- name: Install tpm
+  git:
+    repo: https://github.com/tmux-plugins/tpm.git
+    dest: ~/.tmux/plugins/tpm
+    version: "{{ tmux_tpm_version }}"
+    force: true

@@ -1,0 +1,9 @@
+tmux_packages:
+  - tmux
+  - xclip
+  - git
+tmux_plugin_dir: .tmux/plugins
+tmux_plugins:
+  - name: tpm
+    repo: https://github.com/tmux-plugins/tpm.git
+    version: v3.0.0

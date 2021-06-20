@@ -1,0 +1,22 @@
+argument_specs:
+  main:
+    short_description: The main entry point for the "{{ role_name }}" role.
+    options:
+      tmux_conf_template:
+        type: str
+        required: true
+        description: >-
+          File containing tmux config. Can be templated.
+
+      tmux_packages:
+        type: list
+        elements: str
+        default: ["tmux", "xclip", "git"]
+        description: >-
+          Packages to install. Must contain `tmux`, `xclip`, and `git`.
+
+      tmux_tpm_version:
+        type: str
+        default: v3.0.0
+        description: >-
+          Version of the TPM.

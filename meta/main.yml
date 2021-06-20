@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Tim Schwenke
+  namespace: trallnag
+  role_name: tmux
+  description: Setup tmux on Ubuntu
+  license: Apache-2.0
+  company: none
+  min_ansible_version: 2.5
+
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+
+dependencies: []
